@@ -1,0 +1,202 @@
+
+#footer1{
+    background-color: #212331;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10rem;
+
+}
+#footer1 ul{
+    list-style: none;
+
+    
+}
+#footer1 li{
+    padding: 1rem 1rem 1rem .5rem;
+    
+    border-bottom: .1rem solid rgb(196, 196, 196);
+}
+#footer1 a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.detail-box{
+    padding: 2rem;
+    background-color: #212331;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+
+}
+.footer-appicons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .6rem;
+}
+.footer-icon{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: .1rem solid rgb(135, 125, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.quick-link{
+    padding: 2rem;
+    background-color: #212331;
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+.footer-impLink{
+    padding: 2rem;
+    background-color: #212331;
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-impLink li:hover,.quick-link li:hover,.footer-icon:hover{
+    opacity: .4;
+}
+.footer-heading{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 1rem 1rem 0;
+    display: inline-block;
+}
+.footer-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%; 
+    height: 2px; 
+    background:linear-gradient(to right, #b96969, #ffa502);
+}
+#footer-collegeName{
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+#footer-address{
+    font-size: 1rem;
+    padding: .5rem;
+    font-weight: 100;
+
+}
+#footer1 i{
+    padding: .4rem;
+}
+#footer2{
+    background-color: #2c2c3f;
+    color: white;
+    padding: 2rem;
+}
+#footer2-p,#footer2-span{
+   opacity:.4;
+
+}
+
+
+@media (max-width: 1024px) {
+    #footer1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .detail-box, .quick-link, .footer-impLink {
+        width: 45%;
+        margin-bottom: 1rem;
+    }
+
+    .footer-heading {
+        font-size: 1.3rem;
+    }
+
+    #footer-collegeName {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detail-box, .quick-link, .footer-impLink {
+        width: 80%;
+    }
+
+    .footer-heading {
+        font-size: 1.2rem;
+    }
+
+    #footer-collegeName {
+        font-size: 1rem;
+    }
+
+    #footer-address {
+        font-size: 0.9rem;
+    }
+
+    .footer-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .detail-box, .quick-link, .footer-impLink {
+        width: 100%;
+    }
+
+    .footer-heading {
+        font-size: 1rem;
+    }
+
+    #footer-collegeName {
+        font-size: 0.9rem;
+    }
+
+    #footer-address {
+        font-size: 0.8rem;
+    }
+
+    .footer-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    #footer2 {
+        text-align: center;
+        padding: 1.5rem;
+    }
+}
+

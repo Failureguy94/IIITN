@@ -1,0 +1,150 @@
+
+.partner {
+    background-color: #003153;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+
+.partner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.partner-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+
+.partner-line {
+    width: 100px;
+    height: 4px;
+    background-color: #ff7f50;
+}
+
+.partner-headingtext {
+    font-size: 2.5rem;
+    color: #fbfbf9;
+    margin: 0;
+}
+
+.partnerbox {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.partnerbox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 127, 80, 0.5);
+}
+
+.partner-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ff7f50;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.partnerbox:hover .partner-underline {
+    transform: scaleX(1); 
+    transform-origin: bottom left;
+}
+
+#ministry {
+    background-image: url('ministry-edu-image.jpg');
+}
+
+#govmht {
+    background-image: url('govmht-image.png'); 
+}
+
+#tata {
+    background-image: url('tata-image.jpg'); 
+}
+@media (max-width: 1024px) {
+    .partner-headingtext {
+        font-size: 2rem;
+    }
+
+    .partnerbox {
+        width: 180px;
+        height: 180px;
+        margin: 15px;
+    }
+
+    .partner-line {
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partner {
+        padding: 15px;
+    }
+
+    .partner-heading {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .partner-headingtext {
+        font-size: 1.8rem;
+    }
+
+    .partner-line {
+        width: 60px;
+    }
+
+    .partnerbox {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partner {
+        padding: 10px;
+    }
+
+    .partner-headingtext {
+        font-size: 1.5rem;
+    }
+
+    .partner-line {
+        width: 50px;
+    }
+
+    .partnerbox {
+        width: 120px;
+        height: 120px;
+        margin: 8px;
+    }
+}
+

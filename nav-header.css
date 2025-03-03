@@ -1,0 +1,609 @@
+*{                                                      
+   
+    box-sizing:border-box;
+    padding: 0px;   
+    margin: 0px;
+    
+}
+
+
+
+.main-nav{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    background-image: url('iiitn2.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:100vh;
+    box-shadow: inset 0 140px 30px 5px rgba(0, 0, 0, .8);
+    transition: background-image 1s ease-in-out;
+    opacity: 1;
+}
+.nav-button1{
+    position: absolute;
+    right:0%;
+    top:50%;
+    
+    
+}
+.nav-button1 button{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    color:white;
+    background-color: transparent;
+    font-size: larger;
+    overflow: hidden;
+    border: none;
+    box-shadow: inset 0 100px 30px 5px rgba(0, 0, 0, .5);
+}
+
+.nav-button2{
+    position: absolute;
+    left:0%;
+    top:50%;
+     
+    
+}
+.nav-button2 button{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    color:white;
+    background-color: transparent;
+    font-size: larger;
+    overflow: hidden;
+    border: none;
+    box-shadow: inset 0 100px 30px 5px rgba(0, 0, 0, .5);
+}
+.nav-button1 button:hover{
+    background-image: url('iiitn3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: none;
+}
+
+.nav-button2 button:hover{
+    background-image: url('iiitn2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: none;
+}
+.nav-tit{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 0 15;
+  
+}
+
+.nav-tit img{
+    
+    width:40px;
+    height: 40px;
+    /* background-color: transparent; */
+    
+        filter: contrast(1.5) brightness(2) saturate(1.5);
+      
+      
+    margin-top:40px;
+}
+
+.whitelogo img{
+    width: 60px;
+    height: 60px;
+    visibility:hidden; 
+}
+.visible img {
+    visibility: visible;
+    width: 60px;
+    height: 40px;
+    padding: 0px;
+    margin: none;
+}
+.nav-tit-log{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.nav-tit-name{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: white;
+}
+
+.nav-tit-loc a  {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    vertical-align: flex;
+}
+
+.nav-home:hover i{
+    color:orange;
+}
+
+.nav-tit-loc span {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.nav-bar {
+    position: sticky;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    top:0;
+    opacity: 1;
+    transition: background-color .6s ease, border-bottom .6s ease, opacity .6s ease;
+    z-index: 100000;
+}
+.sticky {
+    background-color: #161145; 
+    position:fixed;
+    width:100%;
+    opacity: 1;
+    z-index: 1000000;
+    border-bottom: orange 5px solid;
+  
+}
+
+
+.nav-main-list {
+ padding: 5px 10px 5px 10px;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ margin:0 10px;
+ list-style-type: none;
+}
+
+.nav-main-list li{
+    padding:10px;
+    position: relative;
+    text-align: center;
+    color:white;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+.nav-main-list li:hover{
+    color:orange
+}
+
+
+
+
+.adm-drop{
+    display:none;
+    position: absolute;
+    top:40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s ease-in-out;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: linear-gradient(to right, #f9f9f9, #d3d3d3);
+}
+
+.adm-drop ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin:0px 30px 0px 0px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.adm-drop li{
+    padding: 0px 10px;
+    color:black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 10px 10px 10px 0px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.adm-drop li:hover a{
+    color: #4a4a4a;
+}
+.adm-drop a{
+    text-decoration: none;
+    color:black;
+    
+}
+.nav-adm:hover .adm-drop{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.about-drop{
+    display:none;
+    position: absolute;
+    top:40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s ease-in-out;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: linear-gradient(to right, #f9f9f9, #d3d3d3);
+}
+
+.about-drop ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin:10px 30px 10px 0px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.about-drop li{
+    padding: 0px 10px;
+    color:black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 10px 10px 10px 0px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.about-drop li:hover a{
+    color: #4a4a4a;
+}
+.about-drop a{
+    text-decoration: none;
+    color:black;
+    
+}
+.nav-about:hover .about-drop{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.gov-drop{
+    display: none;
+    position: absolute;
+    top: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s ease-in-out;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: linear-gradient(to right, #f9f9f9, #d3d3d3);
+}
+
+.gov-drop ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 10px 0px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gov-drop li{
+    padding: 0px 10px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 10px 10px 10px 0px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.gov-drop li:hover a{
+    color: #4a4a4a;
+}
+
+.gov-drop a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-gov:hover .gov-drop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+
+.stu-drop{
+    display: none;
+    position: absolute;
+    top: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s ease-in-out;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: linear-gradient(to right, #f9f9f9, #d3d3d3);
+}
+
+.stu-drop ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 10px 0px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.stu-drop li{
+    padding: 0px 10px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 10px 10px 10px 0px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.stu-drop li:hover a{
+    color: #4a4a4a;
+}
+
+.stu-drop a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-stu:hover .stu-drop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+
+
+
+.acad-drop{
+    display: none;
+    position: absolute;
+    top: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s ease-in-out;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: linear-gradient(to right, #f9f9f9, #d3d3d3);
+}
+
+.acad-drop ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 10px 0px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.acad-drop li{
+    padding: 0px 10px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 10px 10px 10px 0px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.acad-drop li:hover a{
+    color: #4a4a4a;
+}
+
+.acad-drop a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-acad:hover .acad-drop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+
+.dep-drop{
+    display: none;
+    position: absolute;
+    top: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s ease-in-out;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: linear-gradient(to right, #f9f9f9, #d3d3d3);
+}
+
+.dep-drop ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 10px 0px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dep-drop li{
+    padding: 0px 10px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 10px 10px 10px 0px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dep-drop li:hover a{
+    color: #4a4a4a;
+}
+
+.dep-drop a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-dep:hover .dep-drop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+
+
+.pla-drop{
+    display: none;
+    position: absolute;
+    top: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s ease-in-out;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: linear-gradient(to right, #f9f9f9, #d3d3d3);
+}
+
+.pla-drop ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 10px 0px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.pla-drop li{
+    padding: 0px 10px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 10px 10px 10px 0px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.pla-drop li:hover a{
+    color: #4a4a4a;
+}
+
+.pla-drop a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-pla:hover .pla-drop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+
+.other-drop{
+    display: none;
+    position: absolute;
+    top: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s ease-in-out;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: linear-gradient(to right, #f9f9f9, #d3d3d3);
+}
+
+.other-drop ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 10px 0px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.other-drop li{
+    padding: 0px 10px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 10px 10px 10px 0px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.other-drop li:hover a{
+    color: #4a4a4a;
+}
+
+.other-drop a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-other:hover .other-drop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.list-style a{
+    color:black;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+

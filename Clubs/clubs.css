@@ -1,0 +1,170 @@
+*{
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.clubs-intro{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.clubs-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clubs-line-1{
+    height: 2px;
+    width: 10%;
+    position: relative;
+    margin-right: 10px;
+    background: linear-gradient(to left, #BB6034, #F0A500);
+}
+
+.clubs-line-2{
+    height: 2px;
+    width: 10%;
+    position: relative;
+    margin-left: 10px;
+    background: linear-gradient(to right, #BB6034, #F0A500);
+}
+
+.main-clubs-heading{
+    color: #003153;
+}
+
+.clubs-intro{
+    font-size: 1.2rem;
+    margin-top: 30px;
+    line-height: 2;
+    text-align: left;
+    color: #333333 ;
+}
+
+.all-boxes-div{
+    /* margin-left: 100px;
+    margin-right: 100px; */ 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.outer-box{
+    height: 880px;
+    width: 575px;
+    background-color: #fbfbf9;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+.iotics-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("iotics.jpg");
+    background-size: cover;
+}
+
+.club-text{
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.8;
+    font-size: 1.15rem;
+}
+
+.first-col{
+    margin-left: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.second-col{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.estoria-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("estoria.jpg");
+    background-size: cover;
+    background-position: 0px -35px;
+}
+
+.dtaraxia-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("dtaraxia.jpg");
+    background-size: cover;
+}
+
+.e-cell-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("e-cell.jpg");
+    background-size: cover;
+    background-position: 0px -120px;
+}
+
+.strokes-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("strokes.jpg");
+    background-size: cover;
+    background-position: 0px -20px;
+}
+
+.crispr-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("crispr.jpg");
+    background-size: cover;
+    background-position: 0px -100px;
+}
+
+.elevate-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("elevate.jpg");
+    background-size: cover;
+    background-position: 0px -100px;
+}
+
+.orator-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("orator.jpg");
+    background-size: cover;
+    background-position: 0px -100px;
+}
+
+.probe-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("probe.jpg");
+    background-size: cover;
+    background-position: 0px -100px;
+}
+
+.dimensions-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("dimensions.jpg");
+    background-size: cover;
+    background-position: 0px -80px;
+}
+
+.dotslash-club-img{
+    width: 100%;
+    height: 360px;
+    background-image: url("dotslash.jpg");
+    background-size: cover;
+    background-position: 0px -120px;
+}
+
+.clubs-heading{
+    color: #003153;
+}
+
+.clubs-info{
+    color: #333333;
+}

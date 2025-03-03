@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .news {
+            margin-top: 10px;
+            width: 100%;
+            position: relative;
+        }
+
+        .news-header {
+            background-color: #161145;
+            color: white;
+            text-align: center;
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        .news-title {
+            font-size: 2.5rem;
+            z-index: 1;
+        }
+
+        .news-box {
+            width: 8vw;
+            height: 8vh;
+            background-color: #f0f0f0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .news-left-box {
+            left: 0px;
+            border-top-right-radius: 45%;
+            border-bottom-right-radius: 45%;
+        }
+
+        .news-right-box {
+            right: 0px;
+            border-top-left-radius: 45%;
+            border-bottom-left-radius: 45%;
+        }
+
+        .news-container {
+            padding: 5vw;
+            background-color: #f0f0f0;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 3vw;
+            height: 120vh;
+        }
+
+        .news-layer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3vh;
+        }
+
+        .news-part {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .news-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .news-card-img {
+            width: 100%;
+            height: 40%;
+            background-size: cover;
+            background-position: top;
+            border-bottom: 3px solid black;
+            transition: transform 0.3s ease;
+        }
+
+        .news-card:hover .news-card-img {
+            transform: scale(1.1);
+        }
+
+        .news-card-text {
+            color: #000000;
+            padding: 10px;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #161145;
+            font-size: 2.2rem;
+            font-weight: 900;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .news-part:hover .overlay-text {
+            opacity: 1;
+        }
+
+        .news-part::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: inherit;
+            background-size: cover;
+            background-position: center;
+            filter: blur(0);
+            transition: filter 0.3s ease;
+        }
+
+        .news-part:hover::before {
+            filter: blur(12px);
+        }
+
+        .news-link {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+        }
+
+        .news-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Grid adjustments for news cards */
+        .news-part.multi-card {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3vh;
+        }
+
+        .news-part.multi-card .news-card {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="news-header">
+            <div class="news-box news-left-box"></div>
+            <h1 class="news-title">CAMPUS NEWS</h1>
+            <div class="news-box news-right-box"></div>
+        </div>
+        <div class="news-container">
+            <div class="news-layer">
+                <a href="https://iiitn.ac.in/news.php" class="news-part" style="background-image: url(AA.jpeg);">
+                    <div class="overlay-text">Convocation Ceremony 2023</div>
+                </a>
+                <div class="news-part multi-card">
+                    <div class="news-card">
+                        <div class="news-card-img" style="background-image: url(B.jpg);"></div>
+                        <div class="news-card-text"><br><a href="https://iiitn.ac.in/news.php" class="news-link"><h2>Pandemic Pulse</h2></a><br><br>Hardik-Shrishti make app to fight Covid-19 aiding thousands</div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-card-img" style="background-image: url(d.jpeg);"></div>
+                        <div class="news-card-text"><br><a href="https://iiitn.ac.in/news.php" class="news-link"><h2>Forest Forge</h2></a><br><br>IIITN & HCL sign deal to undertake mass Afforestation</div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-layer">
+                <div class="news-part multi-card">
+                    <div class="news-card">
+                        <div class="news-card-img" style="background-image: url(e.png);"></div>
+                        <div class="news-card-text"><br><a href="https://iiitn.ac.in/news.php" class="news-link"><h2>Legacy Unfolds</h2></a><br><br>Atharva from IIITN selected for GSOC 2021</div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-card-img" style="background-image: url(f.jpeg);"></div>
+                        <div class="news-card-text"><br><a href="https://iiitn.ac.in/news.php" class="news-link"><h2>Innovation Cell</h2></a><br><br>IIITN comes up with a new idea to boost Start-Up Ecosystem</div>
+                    </div>
+                </div>
+                <a href="https://iiitn.ac.in/news.php" class="news-part" style="background-image: url(c.jpg);">
+                    <div class="overlay-text" style="color: white;">Click For Latest News...</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
